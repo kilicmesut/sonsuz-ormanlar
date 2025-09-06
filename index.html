@@ -75,7 +75,7 @@
                 </div>
                 <h3 class="text-xl font-bold mb-2">$GREEN Token</h3>
                 <p class="text-sm text-gray-500 mb-4">Dijital ağacınız.</p>
-                <button id="buy-token-btn" class="bg-green-600 text-white px-6 py-3 rounded-full font-bold hover:bg-green-700 transition duration-300">Token Satın Al</button>
+                <a href="https://ethos.vision?token=0xf8c8f74D14eD1b831e8A4dc6556379863310aE05" class="bg-green-600 text-white px-6 py-3 rounded-full font-bold hover:bg-green-700 transition duration-300 inline-block text-center">Token Satın Al</a>
             </div>
         </div>
     </section>
@@ -113,7 +113,6 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const buyTokenBtn = document.getElementById('buy-token-btn');
             const messageBox = document.getElementById('message-box');
             const messageText = document.getElementById('message-text');
 
@@ -126,13 +125,6 @@
                     messageBox.classList.add('translate-x-full');
                 }, 3000);
             }
-
-            buyTokenBtn.addEventListener('click', () => {
-                // In a real application, you would connect to a Web3 library here
-                // to interact with the blockchain and handle token purchases.
-                // For this example, we show a success message.
-                showMessage('GREEN Token satın alma işlemi başarılı!');
-            });
         });
     </script>
 </body>
